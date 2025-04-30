@@ -49,3 +49,20 @@ loadWasm().then(wasm => {
 
 ## HASIL 
 ![img 1](screenshot/hasilnya.png)
+
+## KESIMPULAN
+Ini menunjukkan peningkatan kinerja sekitar 7x dengan WebAssembly dibandingkan JavaScript murni!
+Analisis dan Observasi
+Dari eksperimen ini, saya mengobservasi beberapa hal menarik:
+1.	Perbedaan Kinerja Signifikan: WebAssembly menunjukkan keunggulan kinerja yang signifikan untuk operasi komputasi intensif seperti fungsi Fibonacci rekursif.
+2.	Overhead Startup: Saat menjalankan fungsi sederhana atau dengan input kecil, JavaScript terkadang lebih cepat karena WebAssembly memiliki overhead kompilasi awal.
+3.	Kompleksitas Development: Mengembangkan dengan WebAssembly membutuhkan pengetahuan tambahan dan toolchain yang lebih kompleks, namun hasilnya sepadan untuk aplikasi yang membutuhkan kinerja tinggi.
+4.	Keterbatasan Akses DOM: WebAssembly tidak dapat mengakses DOM secara langsung dan masih membutuhkan JavaScript sebagai perantara, yang perlu dipertimbangkan dalam desain aplikasi.
+Kasus Penggunaan Ideal
+Berdasarkan eksperimen, WebAssembly sangat cocok untuk:
+•	Pemrosesan gambar dan video
+•	Game browser dengan grafis intensif
+•	Aplikasi komputasi ilmiah
+•	Encoding/decoding dan enkripsi
+•	Emulasi dan virtualisasi
+
