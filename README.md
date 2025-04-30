@@ -3,11 +3,13 @@
 |-----|-----|-----|-----|
 |KEMASRAFIRAMADHAN|312310346|TI 23A.4|Pemog Web|
 
-## CODINGAN
+## ESKOERIMEN
 Eksperimen: Perbandingan Kinerja Perhitungan Fibonacci
 Untuk memahami perbedaan kinerja antara JavaScript dan WebAssembly, saya melakukan eksperimen sederhana: membandingkan waktu eksekusi fungsi Fibonacci rekursif pada kedua platform. Fungsi Fibonacci rekursif dipilih karena merupakan contoh klasik dari beban komputasi yang berat dan eksponensial.
 Implementasi JavaScript
 Pertama, saya mengimplementasikan fungsi Fibonacci rekursif dalam JavaScript:
+
+## CODINGAN
 javascript
 function fibonacciJS(n) {
   if (n <= 1) return n;
@@ -46,4 +48,4 @@ loadWasm().then(wasm => {
 });
 
 ## HASIL 
-![img 1](screenshot/1.png)
+![img 1](screenshot/hasilnya.png)
